@@ -386,6 +386,11 @@
 - (void)resetCropViewLayout;
 
 /**
+ Display a custom grid to show an extra cropping zone where needed, in case of wrapped cavases.
+ */
+- (void)displayCustomGrid:(BOOL) dispCustGrid percH:(CGFloat) percH percV:(CGFloat) percV;
+
+/**
  Set the aspect ratio to be one of the available preset options. These presets have specific behaviour
  such as swapping their dimensions depending on portrait or landscape sized images.
 

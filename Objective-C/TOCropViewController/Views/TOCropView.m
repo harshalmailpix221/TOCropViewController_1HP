@@ -982,6 +982,12 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     _cropBoxFrame = cropBoxFrame;
 
     self.foregroundContainerView.frame = _cropBoxFrame;  // set the clipping view to match the new rect
+       //adding custom grid
+    self.gridOverlayView.displayCustVerticalGridLines = self.showCustomGrid;
+    self.gridOverlayView.displayCustHorizontalGridLines = self.showCustomGrid;
+    self.gridOverlayView.percH = _percH;
+    self.gridOverlayView.percV = _percV;
+    
     self.gridOverlayView.frame = _cropBoxFrame;          // set the new overlay view to match the same region
 
     // If the mask layer is present, adjust its transform to fit the new container view size

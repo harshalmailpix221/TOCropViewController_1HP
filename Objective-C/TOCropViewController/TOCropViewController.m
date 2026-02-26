@@ -1182,6 +1182,13 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     return self.cropView.angle;
 }
 
+- (void)displayCustomGrid:(BOOL) dispCustGrid percH:(CGFloat) percH percV:(CGFloat) percV
+{
+    self.cropView.showCustomGrid = dispCustGrid;
+    self.cropView.percH = percH;
+    self.cropView.percV = percV;
+}
+
 - (void)setImageCropFrame:(CGRect)imageCropFrame {
     self.cropView.imageCropFrame = imageCropFrame;
 }

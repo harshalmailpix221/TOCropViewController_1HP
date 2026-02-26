@@ -159,6 +159,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL gridOverlayHidden;
 
+/**
+ Show custom grid
+ */
+@property (nonatomic, assign) BOOL showCustomGrid;
+
+/**
+ Set custome grid perc distance form the bounds
+ */
+@property (nonatomic, assign) CGFloat percH;
+@property (nonatomic, assign) CGFloat percV;
+
 ///**
 // Paddings of the crop rectangle. Default to 14.0
 // */
